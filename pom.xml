@@ -17,7 +17,8 @@
 <!--	defines a multi-module project-->
 	<modules>
 		<module>kafka-producer-wikipedia</module>
-	</modules>
+        <module>Kafka-consumer-database</module>
+    </modules>
 <!--	project that manages the build process for other modules.-->
 	<packaging>pom</packaging>
 
