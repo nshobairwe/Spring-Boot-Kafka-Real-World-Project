@@ -1,18 +1,20 @@
+#WINDOW USERS
+#How to stark kafka broker
 Ensure that Kafka and Zookeeper servers are running:
 
-Start Zookeeper:
-command:
+#Start Zookeeper:
+command use this in kafka folder with new terminal:
 zookeeper-server-start.bat config\zookeeper.properties
 
-Start Kafka:
-command:
+#Start Kafka:
+command use this in kafka folder with new terminal:
 kafka-server-start.bat config\server.properties
 
-Verify Messages To confirm the messages are being published:
-Open another terminal window.
-Run the Kafka consumer to listen to the javaguides topic and verify that the messages are being received:
-command
-kafka-console-consumer.bat --topic javaguides --from-beginning --bootstrap-server localhost:9092
+#Verify Messages are being published in kafka broker topic:
+#Open another terminal window.
+#Run the Kafka consumer to listen to the javaguides topic and verify that the messages are being received:
+#command use this in kafka folder with new terminal:
+kafka-console-consumer.bat --topic put-topic-name --from-beginning --bootstrap-server localhost:9092
 
 
 
@@ -32,4 +34,4 @@ Modify the listeners and advertised.listeners properties in your Kafka server.pr
 listeners=PLAINTEXT://0.0.0.0:9092
 
 # The address the broker advertises to clients
-advertised.listeners=PLAINTEXT://DESKTOP-637TMBH.mshome.net:9092
+advertised.listeners=PLAINTEXT://hostname:9092
